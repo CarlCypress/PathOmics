@@ -65,6 +65,7 @@ _CELL_FEATURE_UNIVERSE: Dict[str, List[str]] = {
 
 # WSI-level aggregation functions (as in your full params.yaml)
 _AGG_FUNCTION_UNIVERSE: List[str] = [
+    "Sum",
     "Mean",
     "Median",
     "StandardDeviation",

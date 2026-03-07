@@ -10,6 +10,7 @@ from __future__ import annotations
 import numpy as np
 
 SUPPORTED_AGG_FUNCS = {
+    "Sum",
     "Mean",
     "Median",
     "StandardDeviation",
@@ -23,7 +24,7 @@ def apply_agg(func: str, x: np.ndarray) -> float:
     """
     Apply one aggregation function to 1D array x.
     NaN-aware behavior:
-      - mean/median/std/percentiles ignore NaNs
+      - sum/mean/median/std/percentiles ignore NaNs
       - skewness/kurtosis computed on finite values only
     """
     x = np.asarray(x, dtype=np.float64)
@@ -31,12 +32,13 @@ def apply_agg(func: str, x: np.ndarray) -> float:
     if x.size == 0:
         return float("nan")
 
+    if func == "Sum":
+        return float(np.nansum(x))
     if func == "Mean":
         return float(np.nanmean(x))
     if func == "Median":
         return float(np.nanmedian(x))
     if func == "StandardDeviation":
-        # sample std (N-1), consistent with your aggregation/readme.md
         return float(np.nanstd(x, ddof=1))
     if func == "InterquartileRange":
         q75 = float(np.nanpercentile(x, 75))
@@ -45,10 +47,9 @@ def apply_agg(func: str, x: np.ndarray) -> float:
     if func == "Skewness":
         return float(nan_skewness(x))
     if func == "Kurtosis":
-        # your doc uses Excess Kurtosis but names it "Kurtosis"
         return float(nan_excess_kurtosis(x))
 
-    return float("nan")
+    raise ValueError(f"Unsupported aggregation function: {func}")
 
 
 def nan_skewness(x: np.ndarray) -> float:

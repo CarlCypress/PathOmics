@@ -67,6 +67,7 @@ aggregation:
   # Supported:
   #   Mean, Median, StandardDeviation, IQR, Skewness, ExcessKurtosis
   functions:
+    - Sum
     - Mean
     - Median
     - StandardDeviation
