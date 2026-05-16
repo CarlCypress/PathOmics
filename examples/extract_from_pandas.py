@@ -3,7 +3,7 @@
 # @Author  : D.N. Huang
 # @Email   : CarlCypress@yeah.net
 # @FileName: extract_from_pandas.py
-# @Project : WSIRadiomics
+# @Project : PathOmics
 
 from __future__ import annotations
 
@@ -17,7 +17,7 @@ from typing import Any, Dict, Tuple, Optional
 import pandas as pd
 from concurrent.futures import ProcessPoolExecutor, as_completed
 
-from wsiradiomics.extractor import extract
+from pathomics.extractor import extract
 
 
 def _init_worker_logging(log_file: str) -> None:
@@ -188,9 +188,9 @@ def main(
 
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
-    ap.add_argument("--input_csv", default=r"D:\research\WSIRadiomics\examples\HE_list.csv")
-    ap.add_argument("--params", default=r"D:\research\WSIRadiomics\examples\params.yaml")
-    ap.add_argument("--out_dir", default=r"D:\research\WSIRadiomics\result")
+    ap.add_argument("--input_csv", default=r"D:\research\PathOmics\examples\HE_list.csv")
+    ap.add_argument("--params", default=r"D:\research\PathOmics\examples\params.yaml")
+    ap.add_argument("--out_dir", default=r"D:\research\PathOmics\result")
     ap.add_argument("--num_workers", type=int, default=16, help="Number of worker processes")
     args = ap.parse_args()
 

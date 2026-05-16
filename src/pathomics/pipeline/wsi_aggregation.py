@@ -3,7 +3,7 @@
 # @Author  : D.N. Huang
 # @Email   : CarlCypress@yeah.net
 # @FileName: wsi_aggregation.py
-# @Project : WSIRadiomics
+# @Project : PathOmics
 
 from __future__ import annotations
 
@@ -12,7 +12,7 @@ import logging
 import time
 import numpy as np
 
-from wsiradiomics.aggregation.functions import (
+from pathomics.aggregation.functions import (
     SUPPORTED_AGG_FUNCS,
     apply_agg,
 )

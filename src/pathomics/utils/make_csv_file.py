@@ -3,14 +3,14 @@
 # @Author  : D.N. Huang
 # @Email   : CarlCypress@yeah.net
 # @FileName: make_csv_file.py
-# @Project : WSIRadiomics
+# @Project : PathOmics
 import os
 import pandas as pd
 
 
 def make_csv(wsi_dir="/home/huangdn/dataset/HE_of_PC",
              mask_dir="/home/huangdn/CellViT-plus-plus/result",
-             out_csv="/home/huangdn/WSIRadiomics/examples/example_file.csv",):
+             out_csv="/home/huangdn/PathOmics/examples/example_file.csv",):
     rows = []
 
     for fname in os.listdir(wsi_dir):

@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2025/12/19 15:01
+# @Time    : 2025/12/23 10:42
 # @Author  : D.N. Huang
 # @Email   : CarlCypress@yeah.net
-# @FileName: glcm.py
-# @Project : WSIRadiomics
+# @FileName: output.py
+# @Project : PathOmics
+

@@ -3,7 +3,7 @@
 # @Author  : D.N. Huang
 # @Email   : CarlCypress@yeah.net
 # @FileName: slide.py
-# @Project : WSIRadiomics
+# @Project : PathOmics
 
 from __future__ import annotations
 

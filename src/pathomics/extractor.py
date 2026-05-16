@@ -31,11 +31,11 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, Dict, List, Optional
 
-from wsiradiomics.io.params import load_params, default_params
-from wsiradiomics.io.geojson import load_cells_from_geojson
-from wsiradiomics.io.slide import open_slide
-from wsiradiomics.pipeline.cell_features import compute_cell_features
-from wsiradiomics.pipeline.wsi_aggregation import compute_wsi_features
+from pathomics.io.params import load_params, default_params
+from pathomics.io.geojson import load_cells_from_geojson
+from pathomics.io.slide import open_slide
+from pathomics.pipeline.cell_features import compute_cell_features
+from pathomics.pipeline.wsi_aggregation import compute_wsi_features
 
 logger = logging.getLogger(__name__)
 

@@ -3,7 +3,7 @@
 # @Author  : D.N. Huang
 # @Email   : CarlCypress@yeah.net
 # @FileName: cell_features.py
-# @Project : WSIRadiomics
+# @Project : PathOmics
 
 from __future__ import annotations
 
@@ -13,8 +13,8 @@ import logging
 import time
 import numpy as np
 
-from wsiradiomics.features import firstorder as fo
-from wsiradiomics.features import shape as sh
+from pathomics.features import firstorder as fo
+from pathomics.features import shape as sh
 
 logger = logging.getLogger(__name__)
 

@@ -3,10 +3,10 @@
 # @Author  : D.N. Huang
 # @Email   : CarlCypress@yeah.net
 # @FileName: shape.py
-# @Project : WSIRadiomics
+# @Project : PathOmics
 
 """
-wsiradiomics.features.shape
+pathomics.features.shape
 
 Shape features for 2D ROI polygons (cell boundaries from GeoJSON).
 

@@ -3,4 +3,4 @@
 # @Author  : D.N. Huang
 # @Email   : CarlCypress@yeah.net
 # @FileName: glrlm.py
-# @Project : WSIRadiomics
+# @Project : PathOmics

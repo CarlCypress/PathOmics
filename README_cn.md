@@ -1,4 +1,4 @@
-# WSIRadiomics
+# PathOmics
 
 <p align="center">
   <a href="README.md">English</a> |
@@ -6,13 +6,13 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/pypi/v/wsiradiomics.svg" />
-  <img src="https://img.shields.io/pypi/pyversions/wsiradiomics.svg" />
+  <img src="https://img.shields.io/pypi/v/pathomics.svg" />
+  <img src="https://img.shields.io/pypi/pyversions/pathomics.svg" />
   <img src="https://img.shields.io/badge/License-MIT-blue" />
   <img src="https://img.shields.io/badge/Domain-Computational%20Pathology-brightgreen" />
 </p>
 
-**WSIRadiomics** 是一个用于 **全视野病理切片（Whole Slide Image, WSI）** 的 **细胞级 → WSI 级放射组学特征提取工具包**。
+**PathOmics** 是一个用于 **全视野病理切片（Whole Slide Image, WSI）** 的 **细胞级 → WSI 级放射组学特征提取工具包**。
 
 它支持从 **细胞实例分割结果（GeoJSON）** 出发，计算细胞级特征，并进一步聚合为 **WSI 级特征**，适用于计算病理、数字病理与多模态研究。
 
@@ -31,7 +31,7 @@
 ### 方法一：通过 PyPI 安装（推荐）
 
 ```
-pip install wsiradiomics
+pip install pathomics
 ```
 
 适合 直接使用 / 服务器环境 / 虚拟环境。
@@ -50,14 +50,14 @@ pip install wsiradiomics
 
 ```
 conda env create -f environment.yaml
-conda activate wsiradiomics
+conda activate pathomics
 ```
 
 或使用 mamba（更快）：
 
 ```
 mamba env create -f environment.yaml
-mamba activate wsiradiomics
+mamba activate pathomics
 ```
 
 > 该方式特别适合 **WSI / OpenSlide / Linux 服务器** 环境。
@@ -78,7 +78,7 @@ examples/
 ### 1️⃣ 单张 WSI 特征提取（API 方式）
 
 ```
-from wsiradiomics.extractor import extract
+from pathomics.extractor import extract
 
 res = extract(
     svs_path="example.svs",

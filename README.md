@@ -1,4 +1,4 @@
-# WSIRadiomics
+# PathOmics
 
 <p align="center">
   <a href="README.md">English</a> |
@@ -6,13 +6,13 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/pypi/v/wsiradiomics.svg" />
-  <img src="https://img.shields.io/pypi/pyversions/wsiradiomics.svg" />
+  <img src="https://img.shields.io/pypi/v/pathomics.svg" />
+  <img src="https://img.shields.io/pypi/pyversions/pathomics.svg" />
   <img src="https://img.shields.io/badge/License-MIT-blue" />
   <img src="https://img.shields.io/badge/Domain-Computational%20Pathology-brightgreen" />
 </p>
 
-**WSIRadiomics** is a **cell-level → WSI-level radiomics feature extraction toolkit** for **Whole Slide Images (WSI)**.
+**PathOmics** is a **cell-level → WSI-level radiomics feature extraction toolkit** for **Whole Slide Images (WSI)**.
 
 It supports starting from **cell instance segmentation results (GeoJSON)** to compute cell-level features and further aggregate them into **WSI-level features**, making it suitable for computational pathology, digital pathology, and multimodal research.
 
@@ -30,7 +30,7 @@ It supports starting from **cell instance segmentation results (GeoJSON)** to co
 
 ### Method 1: Install via PyPI (Recommended)
 ```
-pip install wsiradiomics
+pip install pathomics
 ```
 Suitable for direct usage, server environments, and virtual environments.
 
@@ -47,12 +47,12 @@ Suitable for direct usage, server environments, and virtual environments.
 The project provides a complete environment file:
 ```
 conda env create -f environment.yaml
-conda activate wsiradiomics
+conda activate pathomics
 ```
 Or using mamba (faster):
 ```
 mamba env create -f environment.yaml
-mamba activate wsiradiomics
+mamba activate pathomics
 ```
 > This method is especially suitable for **WSI / OpenSlide / Linux server** environments.
 
@@ -69,7 +69,7 @@ examples/
 ```
 ### 1️⃣ Single WSI feature extraction (API usage)
 ```
-from wsiradiomics.extractor import extract
+from pathomics.extractor import extract
 
 res = extract(
     svs_path="example.svs",

@@ -1,4 +1,4 @@
-name: wsiradiomics
+name: pathomics
 channels:
   - conda-forge
 dependencies:
